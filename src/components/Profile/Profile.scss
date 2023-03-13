@@ -1,19 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
-header {
+#Nav {
   font-size: 0.8rem;
   color: white;
   padding: 1.2rem;
 }
-
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-header {
+#Nav {
   background-color: #191d2b;
   display: flex;
   align-items: center;
@@ -22,9 +12,9 @@ header {
   min-height: 30vh;
 }
 
-header p {
+#Nav p {
   /* background-color: #27AE60; */
-  color: #00ff6a;
+  color: #f05b33;
 }
 
 .maincontainer {
@@ -33,7 +23,7 @@ header p {
 }
 
 .MuiTelInput-TextField {
-  width: 100%;
+  width: fit-content;
   height: 50%;
   padding: 5px 5px;
 }

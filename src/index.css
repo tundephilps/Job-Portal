@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600&display=swap");
+
+li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+a:hover::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: orangered;
+  right: 0;
+  bottom: -10px;
+  color: orangered;
+}

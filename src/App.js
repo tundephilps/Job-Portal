@@ -1,29 +1,26 @@
 import React from "react";
-import "./App.css";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Navbar/Header";
+import "./App.scss";
+import Homepage from "./components/Homepage/Homepage";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Homepage from "./components/Homepage";
-import JobDetails from "./components/JobDetails/JobDetails";
-import JobList from "./components/JobList/JobList";
-import Contact from "./components/Contact/Contact";
 import Profile from "./components/Profile/Profile";
+import JobList from "./components/Jobs/JobList";
+import JobDetails from "./components/Jobs/JobDetails";
+import Terms from "./components/TermsCondition/Terms";
 
 function App() {
   return (
     <div>
       <Router>
-        <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/JobList" element={<JobList />} />
-
           <Route path="/Profile" element={<Profile />} />
 
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/JobList" element={<JobList />} />
+
+          <Route path="/Terms&Condition" element={<Terms />} />
           <Route path="/JobDetails/:id" element={<JobDetails />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );
